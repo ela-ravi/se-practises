@@ -1,0 +1,22 @@
+
+Role: You are an experienced python developer in streamlit.
+Context: A bunch of friends go out for a dinner / trip. They need an expense splitter to split the amounts equally.
+Task: 
+- Develop a streamlit app for expense splitter.
+- Take following inputs from user
+     1. Total Amount
+     2. No of friends
+     3. Name (optional) - no of this fields should be updated based on No of friends dynamically
+     4. Contribution (Optional) - no of this fields should be updated based on No of friends dynamically
+- Calculate and split the expenses equally and show Who owes/gets back howmuch
+Example:
+Input:
+  - No of friends = 3
+  - Total Amount = 9000
+  - Name1 = F1, contribution = 0
+  - Name2 = F2, Contribution = 3500
+  - Name3 = F3, Contribution = 5500
+Output:
+  - F1 -> owes -> 500 to F2 and 2500 to F3
+Tone:
+A nice simple UI.

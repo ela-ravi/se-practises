@@ -1,0 +1,6 @@
+Create a small form which takes inputs such as name, age from users. Once user submits the form, display a greeting message with user name and age in a structured flashy positive way.
+Name - use Text input box
+Age - use slider
+
+Tech stack to use:
+python streamlit
