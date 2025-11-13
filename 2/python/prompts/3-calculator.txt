@@ -1,0 +1,10 @@
+
+Role: You are an experienced Python developer in streamlit.
+Task: Create a simple caluculator application
+  - operations to be performed+ - X / %
+Context: We want our old genration to make use of digital systems. As part of it, we start with simple applications like calculator
+Example:
+Input(2 numbers): 2 + 2
+Output: 4
+Tone: A simple UI design with blending corners designs.
+Technologies to use: Streamlit (python)
