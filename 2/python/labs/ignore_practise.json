@@ -1,0 +1,198 @@
+{
+    "scene1": {
+        "version": "1.3",
+        "style": "realistic",
+        "video_length_in_secs": "10",
+        "video_description": {
+            "subject": {
+                "identity": "South Indian Tamil Village Grandpa Farmer",
+                "appearance": {
+                    "upper_body": "Bare upper half body with natural farmer-type muscles (not bodybuilder type). Slight chest hair visible.",
+                    "lower_body": "White/half-white dhoti (veshti) with the bottom folded up to the top — 'Vettiya madichi kaatu' style",
+                    "body_shape": "Slightly fit, reduced width",
+                    "hair": "Long grayish-black unkempt hair blowing slightly backward",
+                    "beard": "Long beard reaching the chest, grayish white, thick and natural",
+                    "accessory": "Old gray blanket wrapped fully around his upper body at the start, but no blanket in the final posture",
+                    "face_details": "A benign bump above the left eye corner",
+                    "initial_gaze": "Looking downward at the start of the video"
+                }
+            },
+            "environment": {
+                "location": "Green South Indian farm field",
+                "crop_height": "Crops tall enough to reach the subject's chest",
+                "weather": "Heavy thunderstorm with lightning",
+                "wind_effects": "Minimal crop movement, no strong wind noises",
+                "time_of_day": "Evening (around 5:30 PM – golden hour transitioning into dark storm clouds)",
+                "lighting": {
+                    "style": "Cinematic golden-hour mixed with storm lightning",
+                    "description": "Warm orange sunlight partially blocked by dark storm clouds, with dramatic lightning flashes hitting the subject.",
+                    "contrast": "High contrast between dark storm shadows and lightning bursts",
+                    "environment_effects": "Golden reflections on crops mixed with dark thundercloud ambience",
+                    "sky": "Stormy sky filled with dark clouds, occasional lightning illuminating the scene"
+                }
+            },
+            "scene_actions": {
+                "start_posture": {
+                    "body_pose": "Standing still with the blanket wrapped tightly around his upper body",
+                    "head_position": "Head tilted downward",
+                    "lighting_interaction": "Dim golden-hour light with early storm shadowing"
+                },
+                "point_1": {
+                    "action": "Subject opens both arms wide in a heroic, stylish motion while lifting his head up to look directly at the viewer",
+                    "wind_interaction": "Only gentle movement of hair and blanket edges",
+                    "lighting_interaction": "Lightning flash briefly highlights his face and long hair"
+                },
+                "point_2": {
+                    "action": "Blanket flies backward due to storm pressure",
+                    "crop_interaction": "Blanket sweeps across crops, flattening and cutting them to form a clear path",
+                    "lighting_interaction": "Lightning highlights the flying blanket and the damaged crop path"
+                },
+                "pre_speech_lightning": {
+                    "timing": "Just before the subject speaks",
+                    "effect": "A strong, bright lightning strike illuminates the entire frame dramatically"
+                },
+                "speech_trigger": "Immediate lightning strike → half-second pause → subject speaks",
+                "final_posture": {
+                    "description": "The subject ends in the exact posture shown in the reference image.",
+                    "body_pose": {
+                        "upper_body": "Standing firmly facing forward with bare chest fully visible",
+                        "posture": "Strong, steady, slightly leaned forward heroic stance",
+                        "arms": "Resting naturally by the sides, slightly tensed",
+                        "shoulders": "Broad, squared, conveying power"
+                    },
+                    "head_and_face": {
+                        "head_position": "Head slightly lowered but eyes looking intensely straight at the viewer",
+                        "expression": "Serious, fierce, determined",
+                        "features": "Forehead bump (benign bump) clearly visible, long beard and hair slightly wet and flowing"
+                    },
+                    "hair_movement": "Long hair blown slightly backward due to storm pressure",
+                    "lighting": {
+                        "style": "Dramatic storm backlight plus golden-hour rim-light",
+                        "effect": "Lightning highlights the subject’s face, hair, and chest contours",
+                        "shadows": "Deep storm shadows across the body matching the reference image"
+                    },
+                    "camera": {
+                        "framing": "Medium-wide shot — chest up, centered composition",
+                        "angle": "Eye-level angle exactly like the provided image",
+                        "depth_of_field": "Sharp focus on subject, slightly blurred farmland background",
+                        "cinematic_mood": "Epic, storm-lit, high contrast"
+                    },
+                    "background": {
+                        "environment": "Green farm field extending behind him",
+                        "sky": "Dark storm clouds with slight orange sunset glow on the right side, matching the reference image"
+                    }
+                }
+            },
+            "audio": {
+                "spoken_dialog": {
+                    "text": "நான் வீழ்வேன் என்று நினைத்தாயோ",
+                    "language": "Pure Tamil",
+                    "tone": "Deep, attractive male voice with a strong base",
+                    "timing": "Right after the lightning strike and blanket takeoff sequence"
+                },
+                "sound_effects": {
+                    "thunderstorm": {
+                        "presence": true,
+                        "intensity": "Heavy thunder with deep rumble, crystal clear",
+                        "lightning_strike_emphasis": "One extremely powerful thunder + lightning moment just before speech"
+                    },
+                    "wind": {
+                        "presence": false,
+                        "reason": "Avoid wind noise for cleaner audio"
+                    }
+                }
+            }
+        },
+        "video_style": {
+            "realism_level": "very high",
+            "camera": {
+                "framing": "Medium shot capturing the subject from waist upward",
+                "motion": "Slight cinematic slow-motion effect during blanket takeoff",
+                "lighting_behavior": "Realistic lightning flashes illuminating the subject and environment"
+            }
+        }
+    },
+    "scene2": {
+        "version": "1.3",
+        "style": "realistic",
+        "video_length_in_secs": "6",
+        "video_description": {
+            "scene_actions": {
+                "start": {
+                    "body_pose": {
+                        "upper_body": "Standing firmly facing forward with bare chest fully visible",
+                        "posture": "Strong, steady, slightly leaned forward heroic stance",
+                        "arms": "Resting naturally by the sides, slightly tensed",
+                        "shoulders": "Broad, squared, conveying power"
+                    },
+                    "head_and_face": {
+                        "head_position": "Head slightly lowered but eyes looking intensely straight at the viewer",
+                        "expression": "Serious, fierce, determined",
+                        "features": "Forehead bump (benign bump) clearly visible, long beard and hair slightly wet and flowing"
+                    },
+                    "hair_movement": "Long hair blown slightly backward due to storm pressure",
+                    "lighting": {
+                        "style": "Dramatic storm backlight plus golden-hour rim-light",
+                        "effect": "Lightning highlights the subject’s face, hair, and chest contours",
+                        "shadows": "Deep storm shadows across the body matching the reference image"
+                    },
+                    "camera": {
+                        "framing": "Medium-wide shot — chest up, centered composition",
+                        "angle": "Eye-level angle exactly like the provided image",
+                        "depth_of_field": "Sharp focus on subject, slightly blurred farmland background",
+                        "cinematic_mood": "Epic, storm-lit, high contrast"
+                    },
+                    "background": {
+                        "environment": "Green farm field extending behind him",
+                        "sky": "Dark storm clouds with slight orange sunset glow on the right side, matching the reference image"
+                    }
+                },
+                "pre_action_lightning": {
+                    "timing": "0.5s after scene start",
+                    "effect": "A sudden, bright lightning flash behind the subject, giving a heroic silhouette highlight."
+                },
+                "continuation_action": {
+                    "action": "Subject performs a powerful, enthusiastic heroism pose.",
+                    "motion_details": {
+                        "description": "From the resting final posture, the subject brings both hands upward rapidly from below.",
+                        "biceps_alignment": "Biceps swing out to the sides horizontally (X-axis), aligned with shoulders.",
+                        "forearm_alignment": "Forearms rotate vertically upward at a 90-degree angle (Y-axis), fists pointing up.",
+                        "hand_pose": "Both palms closed tightly into strong fists.",
+                        "speed": "Very fast, energetic, conveying aggression and dominance.",
+                        "body_intent": "A surge of heroism, like releasing built-up power."
+                    },
+                    "lighting_interaction": {
+                        "effect": "Lightning flickers across the subject's arms and chest as he completes the wide power stance."
+                    },
+                    "camera_interaction": {
+                        "framing": "Medium shot continues, clearly capturing the strong shoulder-to-fist pose."
+                    }
+                },
+                "dialogue_moment": {
+                    "timing": "Right after the arms lock into the final wide-power pose",
+                    "expression": "Eyes narrow slightly with intensity."
+                },
+                "final_posture": {
+                    "description": "Subject ends the scene in a wide, powerful stance: biceps fully horizontal, forearms vertical, fists tight and pointing upward, chest expanded, eyes intense at the camera. Hair falls naturally around shoulders with slight backward flow from storm pressure. Camera remains at medium shot, perfectly centered on his heroic pose.",
+                    "purpose": "This posture must be used as the starting posture for the next (3rd) scene."
+                }
+            },
+            "audio": {
+                "spoken_dialog": {
+                    "text": "உன்னை வீழ்த்தப் பிறந்தேனடா",
+                    "language": "Pure Tamil",
+                    "tone": "Deep, aggressive male voice with strong bass",
+                    "timing": "Immediately after completing the hero pose"
+                }
+            }
+        },
+        "video_style": {
+            "realism_level": "very high",
+            "camera": {
+                "framing": "Medium shot capturing chest, shoulders, and arm movement",
+                "motion": "Light cinematic shake synced to arm thrust",
+                "lighting_behavior": "Realistic lightning behavior emphasizing heroism"
+            }
+        }
+    }
+}

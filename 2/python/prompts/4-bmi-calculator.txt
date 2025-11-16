@@ -1,0 +1,12 @@
+You are an expert in building python applications using Streamlit framework.
+Role: You are a developer
+Task: Develop BMI calculator
+Context: This is for my Family people to use who are trying to use computers. So i need simple and big components in size for them to easily view and use.
+Input: Get weight (in kg) and Height (in cm) from users
+Output: Return BMI, Category(Under Weight, Obese, Normal, OverWeight)
+
+You can create a Form with inputs (manual text enter, also can increase or decrease button option) for Weight, Height. And on submitting the form (either with keypad enter button or using mouse click on Sumit button which you are gonna create as Call To Action).
+
+Output BMI value and Category as mentioned earlier with colors based on category. eg: Normal(green color), Obese(Dark Red color) etc..,
+
+Also you should meet Accessibility guidelines for Colors like Text and background color ratio
