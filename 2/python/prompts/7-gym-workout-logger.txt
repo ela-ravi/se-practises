@@ -1,0 +1,36 @@
+Prompt1:
+RCTFR Prompt: Gym Workout Logger POC
+
+R (Request):
+Develop a single-file Streamlit web application (`app.py`) for a "Gym Workout Logger." The primary goal is to provide a simple, highly intuitive interface for users to quickly log their weightlifting session data.
+
+C (Constraint):
+1. **Simplicity:** The app must be very easy to use and visually clean. Use responsive Streamlit layout elements.
+2. **Contrast & Aesthetics:** Ensure a high-contrast theme. Use the default Streamlit dark theme or set the background/text colors manually for optimal readability (e.g., dark background with bright text/elements).
+3. **Dependencies:** Use only `streamlit` and `pandas`. Do not introduce other visualization libraries (like matplotlib or seaborn) or database connectors.
+
+T (Tool/Tech):
+Python 3.x, Streamlit, Pandas.
+
+F (Functionality/Features):
+1. **Data Storage:** Use `st.session_state` to store the workout data during the session.
+2. **Input Form:** A clean input section to log four required fields:
+    * **Exercise Name** (Text input)
+    * **Sets** (Number input, Integer)
+    * **Reps** (Number input, Integer)
+    * **Weight** (Number input, Float/Integer)
+3. **Data Display:** Display the current session's logged workouts in a clean, scrollable Streamlit data table (`st.dataframe` or `st.table`).
+4. **Progress Graph (Weekly Volume):** Calculate the total *Volume* for each unique day logged (Volume = Sets x Reps x Weight). Display the daily total volume as a simple line or bar chart showing the last 7 days of activity. This calculation must use `pandas` for grouping and aggregation.
+
+R (Result Format):
+A complete, runnable Python script (`app.py`) that includes all necessary imports, setup, UI elements, and data logic.
+
+
+Prompt2 (after adding log in UI):
+Explain the error:
+AttributeError: module 'streamlit' has no attribute 'experimental_rerun'
+Traceback:
+File "/Volumes/Development/Practise/se-practises/2/python/7-gym-workout-logger.py", line 94, in <module>
+    log_workout(exercise_name, sets, reps, weight)
+File "/Volumes/Development/Practise/se-practises/2/python/7-gym-workout-logger.py", line 64, in log_workout
+    st.experimental_rerun()

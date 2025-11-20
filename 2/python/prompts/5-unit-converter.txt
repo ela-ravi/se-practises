@@ -1,0 +1,46 @@
+Prompt1:
+Role: You are an experienced python developer who knows to build streamlit apps.
+
+Context: For school students, we try to create a unit-converter app using streamlit. So the interface should be very easy and have large components (like inputs, buttons etc..,) for easy use to children below 5th standard with rounded edges and flashy colors which should attract them.
+
+Task: Create a unit-converter streamlit python app which should convert
+1. currency (INR↔USD), 
+2. temperature (°C↔°F), 
+3. length (cm↔inch), 
+4. weight (kg↔lb)
+
+Examples:
+INR -> USD: (Input: 1 ₹, Output: 0.011 $)
+USD -> INR:  (Input: 1 $, Output: 88.51 ₹)
+
+°C->°F (Input: 1 °C, Output: 33.8 °F)
+°F -> °C (Input: 1 °F, Output: -17.2222 °C)
+
+
+Prompt2:
+I see onhover of tabs in tab-list, The color of texts (eg: tamperature, currency, length and weight changes from white to orange/red. 
+instead by default keep it in orange/red). On focus the color becomes black which should be absolutelyt fine.
+
+
+Prompt3:
+Do the same for other places where color is white. Because white is not viewable with light background that we have
+
+Prompt4;
+do the same for radio group elements and number input elements
+
+Prompt5: (This didnot work as expected)
+do the same for radio buttons labels
+
+Prompt6:
+For base-input, update input box placeholder or values to white color
+
+Prompt7:
+Provide some space between title-card and tab-list
+
+Prompt8: (this did not work)
+Bring block-container to the center of the screen. so that top and bottom has equal dynamic space
+
+Prompt9:
+for block-container, add 
+    top: 5rem;
+    position: absolute;

@@ -1,0 +1,98 @@
+Prompt1:
+
+**Role:**
+You are a Python developer and UX-minded engineer who writes clean, production-ready Streamlit apps.
+
+**Task (what to build):**
+Build a **Water Intake Tracker** Streamlit app that lets users log daily water (in ml), shows progress toward a 3 L (3000 ml) daily goal, and displays a weekly hydration chart. The app should allow simple persistence (local file) and produce screenshots for sharing.
+
+**Constraints & Non-functional requirements:**
+
+* Use Python + Streamlit only (no external web services).
+* Keep dependencies minimal (recommend: `streamlit`, `pandas`, `matplotlib` or `plotly`, `altair`, and `Pillow` if creating screenshots).
+* Store data persistently between runs using a simple CSV (`data/water_log.csv`) in the app directory. Create folder if missing. Do not require a DB.
+* App must run with `streamlit run app.py`.
+* Code should be modular, commented, and easy to read. Provide a single-file `app.py` entrypoint.
+* UI must be responsive on desktop and mobile browser widths supported by Streamlit.
+* Use clear labels and units (ml / L). Provide accessibility-friendly text.
+
+**Functional requirements (features):**
+
+1. **Daily logging**
+
+   * Allow user to add a new intake entry: numeric input (ml) + optional timestamp (defaults to now).
+   * Show a quick-add row of common amounts (e.g., 250 ml, 500 ml, 750 ml) as buttons.
+2. **Today's summary & progress**
+
+   * Display total water consumed today (ml and L, rounded to 2 decimals).
+   * Show progress bar to a 3,000 ml goal (label the % and ml remaining).
+   * If user exceeds 3L, show a friendly congratulations message.
+3. **Weekly hydration chart**
+
+   * Aggregate past 7 days total consumption and plot a bar chart (day names on x-axis, ml on y-axis).
+   * Highlight today’s bar visually.
+   * Show an optional 3L horizontal goal line on the chart.
+4. **History & Edit**
+
+   * Show a compact table of recent entries (timestamp, ml).
+   * Allow deleting the last entry (or any entry) with a confirmation. (If deletion is complex, at minimum allow deleting the last entry.)
+5. **Export & Screenshot**
+
+   * Provide a button to export the last 7 days CSV.
+   * Provide a single-click option to save a screenshot of the app view (or chart). If built-in screenshot not feasible, provide instructions to use Streamlit’s `st.download_button` to download a generated PNG of the chart.
+6. **Onboarding text**
+
+   * A short header, small description, and cheerful footer: “Share the screenshots — Happy Learning guys 🤍”.
+
+**UI / UX details:**
+
+* Page title: “Water Intake Tracker 💧”
+* Use a left sidebar for controls: daily quick-add buttons, numeric input, add button, export button.
+* Main area: top row with progress summary + progress bar; middle area with weekly chart; bottom area with recent entries table and delete button.
+* Show units in ml and convert to L where helpful (e.g., `1.75 L`).
+* Use friendly microcopy (e.g., “Almost there — 450 ml to reach 3 L!”).
+
+**Data schema & example:**
+CSV columns: `timestamp (ISO8601)`, `ml (int)`.
+Example rows:
+
+```
+2025-11-19T07:30:00,250
+2025-11-19T09:10:00,500
+```
+
+**Edge cases & validation:**
+
+* Reject non-positive values (<= 0) with a helpful message.
+* Cap extremely large single entries with a soft warning (e.g., > 2000 ml ask for confirmation).
+* Handle empty CSV gracefully (start with no data).
+* Timezone: use local time (system time) for timestamps.
+
+**Charting specifics:**
+
+* Use `altair` or `plotly` or `matplotlib` (choose one, prefer interactive altair/plotly).
+* X-axis: last 7 days (labels Mon/Tue/... or dates). Y-axis: ml.
+* Add horizontal dashed line at 3000 ml.
+* Show tooltips on hover (date and ml).
+
+**Testing instructions:**
+
+* Run `streamlit run app.py`.
+* Add several quick-add entries and verify: totals update, progress bar changes, chart updates.
+* Delete an entry and confirm totals / chart update.
+* Export CSV and open it to verify contents.
+
+**Deliverable format:**
+
+* A single file called `app.py` containing the full Streamlit app.
+* A `requirements.txt` listing required packages.
+* Add comments at top explaining how to run.
+* Include a short README snippet (in comment) for usage.
+
+**Tone & copy for UI:**
+
+* Friendly, encouraging, short. Example header/description:
+
+  * Header: `# Water Intake Tracker 💧`
+  * Subtext: `Log water quickly. Aim: 3 L/day. Keep hydrated — Happy healthy life 🤍`
+
