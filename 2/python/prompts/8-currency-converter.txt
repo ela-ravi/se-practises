@@ -1,0 +1,6 @@
+Prompt:
+@8-currency-converter.py 
+ Task: Build a Currency Converter 💱
+Convert between INR, USD, EUR, GBP (use static rates). Dropdown + input → instant result.
+Tech stack: streamlit
+Style: A simple POC
